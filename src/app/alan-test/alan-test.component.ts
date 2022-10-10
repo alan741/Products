@@ -12,5 +12,5 @@ export class AlanTestComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  products = [];
+  products = ['Peine', 'Zapato', 'Camisa', 'Pantalon'];
 }
