@@ -1,3 +1,41 @@
 <p>ropa-dama-component works!</p>
 
 <app-sharing-form></app-sharing-form>
+<dx-button
+    text="Click me"
+    width="300"
+    (onClick)="helloWorld()">
+</dx-button>
+
+<dx-list>
+    <dxi-item>
+        <h1>Available items</h1>
+    </dxi-item>
+    <dxi-item *ngFor="let item of listItems" [badge]="item.badge">
+        <h2>{{item.text}}</h2>
+    </dxi-item>
+</dx-list>
+
+<dx-data-grid>
+    <dxi-column dataField="options" caption="Options" type="buttons">
+        <dxi-button
+            [onClick]="okClicked">
+        </dxi-button>
+    </dxi-column>
+    <dxi-column dataField="firstName" caption="First Name"></dxi-column>
+</dx-data-grid>
+
+<dx-data-grid>
+    <dxi-column type="buttons">
+        <dxi-button
+            [onClick]="okClicked">
+        </dxi-button>
+    </dxi-column>
+</dx-data-grid>
+
+<dx-chart>
+    <dxi-series valueField="value" argumentField="argument"></dxi-series>
+    <dxi-value-axis>
+        <dxo-label format="millions"></dxo-label>
+    </dxi-value-axis>
+</dx-chart>

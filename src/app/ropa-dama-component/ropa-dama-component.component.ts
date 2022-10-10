@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import notify from "devextreme/ui/notify";
 
 @Component({
   selector: 'app-ropa-dama-component',
@@ -12,4 +13,19 @@ export class RopaDamaComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  helloWorld(){
+    alert("ay holaaa");
+  }
+
+  okClicked () {
+      notify("The OK button was clicked")
+  }
+
+  listItems = [{
+    text: 'Cars',
+    badge: '12'
+  }, {
+    text: 'Bikes',
+    badge: '5'
+  }];
 }

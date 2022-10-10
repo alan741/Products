@@ -8,6 +8,11 @@ import { AlanTestComponent } from './alan-test/alan-test.component';
 import { RopaCaballeroComponentComponent } from './ropa-caballero-component/ropa-caballero-component.component';
 import { RopaDamaComponentComponent } from './ropa-dama-component/ropa-dama-component.component';
 import { SharingFormComponent } from './sharing-form/sharing-form.component';
+import { DxButtonModule } from 'devextreme-angular';
+import { DxDataGridModule } from 'devextreme-angular';
+import { DxChartModule } from 'devextreme-angular';
+import dxChart from 'devextreme/viz/chart';
+import { DxListModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,11 @@ import { SharingFormComponent } from './sharing-form/sharing-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DxButtonModule,
+    DxDataGridModule,
+    DxChartModule,
+    DxListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
